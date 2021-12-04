@@ -14,5 +14,24 @@
  * @return {ListNode}
  */
 var removeElements = function(head, val) {
-    
-  };
+  let temp = new ListNode(-1)
+  temp.next = head
+  let currentNode = head
+  let prevNode = temp
+ 
+  while(currentNode){
+    if(currentNode.val == val){
+        prevNode.next = currentNode.next
+        currentNode = currentNode.next
+       
+    } else{
+        prevNode = currentNode
+        currentNode = currentNode.next
+    }
+     
+  }
+  return temp.next
+ 
+
+};
+console.log(removeElements)
