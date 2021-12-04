@@ -1,5 +1,5 @@
 "use strict";
-const LinkedList = require('./LinkedList.js');
+const LinkedList = require('../LinkedList.js');
 const Node = require('./Node.js');
 
 //Access HeadNode => this.head
