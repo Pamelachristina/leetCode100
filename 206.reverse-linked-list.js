@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=876 lang=javascript
+ * @lc app=leetcode id=206 lang=javascript
  *
- * [876] Middle of the Linked List
+ * [206] Reverse Linked List
  */
 
 // @lc code=start
@@ -16,18 +16,8 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var middleNode = function (head) {
-  let fast = head;
-  let slow = head;
-
-  while (fast && fast.next) {
-    fast = fast.next.next;
-    slow = slow.next;
-  }
-  return slow;
+var reverseList = function(head) {
+    
 };
 // @lc code=end
 
-/*
-Use two pointer method
-*/
